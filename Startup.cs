@@ -25,6 +25,7 @@ namespace user_secrets
             app.Run(async ctx =>
             {
                 await ctx.Response.WriteAsync($"Connection string: {configuration["connectionString"]}");
+                Console.WriteLine("TEST");
             });
         }
     }
